@@ -46,8 +46,12 @@ h2 + p {
   font-size: 0.625rem;
   font-weight: 900;
   color: #f18119;
+  padding-top: 2px;
+  margin: 0;
   text-transform: uppercase;
   order: -1;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .fine-print {
@@ -65,6 +69,8 @@ strong {
 .intro {
   background-color: #404040;
   background-image: url(./images/BBQ-master.jpg);
+  background-blend-mode: multiply;
+  background-color: #404040;
   background-size: cover;
   background-position: center;
   padding: 0 0.5rem 2rem;
@@ -113,7 +119,6 @@ input {
 .btn {
   display: inline-block;
   padding: 1em;
-  background-image: linear-gradient();
   font-size: 0.625rem;
   text-transform: uppercase;
   font-weight: 900;
@@ -124,11 +129,13 @@ input {
 .btn-primary {
   background: linear-gradient(to left, #ff713b, #ffa51d);
   color: white;
-  transition: 200ms;
+  transform: scale(1);
+  transition: transform 250ms;
 }
 
-.btn-primary:hover {
-  color: black;
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
 }
 /*==============
     media queries section
