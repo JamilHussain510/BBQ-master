@@ -1,2 +1,3 @@
 # BBQ-master
-I am creating a static web page for BBQ master. I am using HTML5 and CSS3 best practices.
+
+I'm creating a simple registration webpage for becoming a BBQ master. I'm using HTML5, CSS3, and JavaScript.

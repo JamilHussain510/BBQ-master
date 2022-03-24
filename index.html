@@ -18,7 +18,7 @@
       <p>Join us for this live webinar</p>
       <p class="top-text">Mouthwateringly delicious</p>
     </div>
-    <div class="main-content">
+    <div id="Main-Content" class="main-content">
       <h2>Become a BBQ master!</h2>
       <p>Register Today</p>
       <p class="main-content-details">
@@ -34,21 +34,14 @@
         action="#"
         action="post"
       >
-        <input type="text" placeholder="first name" required />
-        <input type="email" placeholder="email" required />
+        <input name="firstName" type="text" placeholder="first name" required />
+        <input name="emailAddress" type="email" placeholder="email" required />
         <button class="btn btn-primary" type="submit">Register</button>
       </form>
       <p class="fine-print">
         We'll never share your information without your permission
       </p>
     </div>
-    <script>
-      let emailCollectorForm = document.getElementById("Email-Collector");
-      emailCollectorForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        let ourFormDate = new FormData(event.target);
-        console.log(ourFormDate);
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
